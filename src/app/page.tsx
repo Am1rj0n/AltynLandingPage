@@ -11,6 +11,29 @@ import { Component as ImageAutoSlider } from "@/components/ui/image-auto-slider"
 
 const fadeUp = { hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } };
 
+const PRICING_PLANS = [
+  {
+    name: "Starter",
+    price: "$0",
+    description: "Get started for free",
+    features: ["Up to 5 users", "Basic analytics", "Email support"],
+    popular: false,
+  },
+  {
+    name: "Pro",
+    price: "$29/mo",
+    description: "For growing teams",
+    features: ["Unlimited users", "Advanced analytics", "Priority support", "Custom integrations"],
+    popular: true,
+  },
+  {
+    name: "Enterprise",
+    price: "Custom",
+    description: "For large organizations",
+    features: ["Everything in Pro", "Dedicated account manager", "SLA guarantee", "On-prem option"],
+    popular: false,
+  },
+];
 
 
 function Navbar() {
